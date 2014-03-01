@@ -1,0 +1,5 @@
+(defun taskwarrior ()
+  (interactive)
+  (switch-to-buffer "*Taskwarrior*")
+  (read-only-mode)
+  (call-process "task" nil t nil "unblocked"))
